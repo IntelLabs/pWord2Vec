@@ -1,5 +1,7 @@
 # pWord2Vec
-This is a C++ implementation of word2vec that is optimized on Intel CPUs, particularly, Intel Xeon and Xeon Phi (Knights Landing) processors. It supports the "HogBatch" parallel SGD as described in "[Parallelizing Word2vec in Shared and Distributed Memory](https://arxiv.org/abs/1604.04661)". A short NIPS workshop version can be found [here](https://arxiv.org/abs/1611.06172). It also uses data parallelism to distribute the computation via MPI over a CPU cluster. The code is developed based on the [original word2vec](https://code.google.com/archive/p/word2vec/) implementation from Google.
+This is a C++ implementation of word2vec that is optimized on Intel CPUs, particularly, Intel Xeon and Xeon Phi (Knights Landing) processors. It supports the "HogBatch" parallel SGD as described in "[Parallelizing Word2vec in Shared and Distributed Memory](https://arxiv.org/abs/1604.04661)". A short NIPS workshop version can be found [here](https://arxiv.org/abs/1611.06172). It also uses data parallelism to distribute the computation via MPI over a CPU cluster. 
+
+The code is developed based on the [original word2vec](https://code.google.com/archive/p/word2vec/) implementation from Google.
 
 ##License
 All source code files in the package are under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
@@ -29,7 +31,8 @@ sudo apt-get install numactl (on Ubuntu)
 
 ##Quick Start
 1. Download the code: ```git clone https://github.com/IntelLabs/pWord2Vec```
-2. Run .\install.sh to build the package (e.g., it downloads hyperwords and compiles the source code.) Note that this installation will try to produce two binaries: pWord2Vec and pWord2Vec_mpi. If you are only interested in the non-mpi version of w2v, you don't need to set up mpi and the compilation will fail on building pWord2Vec_mpi of course. But you can still use the non-mpi binary for the rest of single machine demos.
+2. Run .\install.sh to build the package (e.g., it downloads hyperwords and compiles the source code.)  
+Note that this installation will try to produce two binaries: pWord2Vec and pWord2Vec_mpi. If you are only interested in the non-mpi version of w2v, you don't need to set up mpi and the compilation will fail on building pWord2Vec_mpi of course. But you can still use the non-mpi binary for the rest of single machine demos.
 3. Download the data: ```cd data; .\getText8.sh or .\getBillion.sh```
 4. Run the demo script: ```cd sandbox; ./run_single_text8.sh (for single machine demo) or ./run_mpi_text8.sh (for distributed w2v demo)```
 5. Run the code on the 1-billion-word-benchmark: ```cd billion; ./run_single.sh (for single machine w2v) or ./run_mpi.sh (for distributed w2v) (please set ncores=number of logical cores of your machine)```
