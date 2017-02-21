@@ -17,6 +17,7 @@
  */
 
 #include <cstring>
+#include <cmath>
 #include <algorithm>
 #include <unistd.h>
 #include <omp.h>
