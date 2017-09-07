@@ -42,4 +42,4 @@ Note that this installation will try to produce two binaries: pWord2Vec and pWor
 1. [Parallelizing Word2Vec in Shared and Distributed Memory](https://arxiv.org/abs/1604.04661), arXiv, 2016.
 2. [Parallelizing Word2Vec in Multi-Core and Many-Core Architectures](https://arxiv.org/abs/1611.06172), in NIPS workshop on Efficient Methods for Deep Neural Networks, Dec. 2016.
 
-For questions and bug reports, please email shihao.ji@intel.com
+For questions and bug reports, you can reach me at https://cs.gsu.edu/~sji/
