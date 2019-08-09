@@ -40,7 +40,7 @@ Note that this installation will try to produce two binaries: pWord2Vec and pWor
 
 ## Reference
 
-[Parallelizing Word2Vec in Shared and Distributed Memory](https://ieeexplore.ieee.org/document/8663393), IEEE Transactions on Parallel and Distributed Systems (IEEE TPDS), 2019. 
+[Parallelizing Word2Vec in Shared and Distributed Memory](https://ieeexplore.ieee.org/document/8663393), IEEE Transactions on Parallel and Distributed Systems (IEEE TPDS), Volume 30, Issue 9, Pages 2090-2100, Sept. 1 2019. 
 
 [Parallelizing Word2Vec in Multi-Core and Many-Core Architectures](https://arxiv.org/abs/1611.06172), NIPS workshop on Efficient Methods for Deep Neural Networks, Dec. 2016.
 
