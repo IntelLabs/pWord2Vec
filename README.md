@@ -1,4 +1,12 @@
 # pWord2Vec
+
+> :warning: **DISCONTINUATION OF PROJECT** - 
+> *This project will no longer be maintained by Intel.
+> Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.*
+> **Intel no longer accepts patches to this project.**
+> *If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.*
+
+
 This is a C++ implementation of word2vec that is optimized on Intel CPUs, particularly, Intel Xeon and Xeon Phi (Knights Landing) processors. It supports the "HogBatch" parallel SGD as described in a NIPS workshop paper "[Parallelizing Word2Vec in Multi-Core and Many-Core Architectures](https://arxiv.org/abs/1611.06172)". It also uses data parallelism to distribute the computation via MPI over a CPU cluster. 
 
 The code is developed based on the [original word2vec](https://code.google.com/archive/p/word2vec/) implementation from Google.
